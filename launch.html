@@ -333,7 +333,7 @@ upload_workspace().then((contents) => {
         if (frameURL == ""){
             x = getURLParameter('url')
             if (x.includes(".") == false){
-                x="https://duckduckgo.com/search?q=" + x
+                x="https://search.brave.com/search?q=" + x
             }
             if (x.startsWith("https://") == false){
                 x="https://" + x
