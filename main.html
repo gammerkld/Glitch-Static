@@ -254,7 +254,6 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
             <span class="material-symbols-outlined" onclick="openApp('game')">sports_esports</span>
             <span class="material-symbols-outlined" onclick="openApp('glpaint')">brush</span>
             <span class="material-symbols-outlined" onclick="openApp('gpt')">robot</span>
-            <span class="material-symbols-outlined" onclick="openApp('tv')">tv</span>
             <span class="material-symbols-outlined" onclick="openApp('settings')">settings</span>
         </div>
         <div class="system-tray">
@@ -386,9 +385,6 @@ function openApp(app){
     else if (app == "gpt"){
         //https://deepseek.net/chat
         createWindow(Math.random().toString(36).substring(2, 15), 'ChatGPT', '<iframe src="'+localStorage.getItem("link")+'/launch_page.html?url=https://deepai.org/chat/free-chatgpt" style="border:0; flex-grow:1; width:100%; height:100%;"></iframe>', true);  
-    }
-    else if (app == "tv"){
-        createWindow(Math.random().toString(36).substring(2, 15), 'Swiftly TV', '<iframe src="'+localStorage.getItem("link")+'/launch_page.html?url=https://swifly.cloud/movies.html" style="border:0; flex-grow:1; width:100%; height:100%;"></iframe>', true);  
     }
 }
 
