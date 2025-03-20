@@ -394,14 +394,14 @@ function updateTime() {
 setInterval(() => {
     const wallpaper = localStorage.getItem('wallpaper');
     if (wallpaper === undefined) {
-        document.body.style.backgroundImage = `url('assets/images/wallpaper.webp')`;
+        document.body.style.backgroundImage = `url('assets/images/th.jpg')`;
     } else if (wallpaper) {
         document.body.style.backgroundImage = `url('${wallpaper}')`;
     }
 }, 1000);
 const wallpaper = localStorage.getItem('wallpaper');
 if (wallpaper === undefined) {
-    document.body.style.backgroundImage = `url('assets/images/wallpaper.webp')`;
+    document.body.style.backgroundImage = `url('assets/images/th.jpg')`;
 } else if (wallpaper) {
     document.body.style.backgroundImage = `url('${wallpaper}')`;
 }
